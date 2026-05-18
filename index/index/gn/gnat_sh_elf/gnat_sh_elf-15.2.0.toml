@@ -1,0 +1,20 @@
+name = "gnat_sh_elf"
+version = "15.2.0"
+provides = ["gnat=15.2.0"]
+description = "The GNAT Ada compiler - SuperH cross compiler"
+maintainers = ["ada.orbit@linuxposting.xyz"]
+maintainers-logins = ["AdaOrbit"]
+licenses = "GPL-3.0-or-later AND GPL-3.0-or-later WITH GCC-exception-3.1"
+
+auto-gpr-with = false
+
+[configuration]
+disabled = true
+
+[environment]
+PATH.prepend = "${CRATE_ROOT}/bin"
+
+[origin."case(os)".linux."case(host-arch)".x86-64]
+binary = true
+url = "/home/ada/Projects/GNAT-FSF-builds/out_artifacts/gcc-15.2.0-sh-elf-linux64.tar.bz2"
+hashes = ["sha256:91ccfea326d463b1b1705788be9575b8ef96870990e3319fe775bac5acca1c31"]
