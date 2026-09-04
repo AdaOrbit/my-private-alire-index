@@ -5,6 +5,7 @@ description = "The GNAT Ada compiler - SuperH cross compiler"
 maintainers = ["ada.orbit@linuxposting.xyz"]
 maintainers-logins = ["AdaOrbit"]
 licenses = "GPL-3.0-or-later AND GPL-3.0-or-later WITH GCC-exception-3.1"
+website = "https://github.com/AdaOrbit/GNAT-FSF-builds"
 
 auto-gpr-with = false
 
@@ -17,4 +18,6 @@ PATH.prepend = "${CRATE_ROOT}/bin"
 [origin."case(os)".linux."case(host-arch)".x86-64]
 binary = true
 url = "https://github.com/AdaOrbit/GNAT-FSF-builds/releases/download/gnat-16.1.0/gcc-16.1.0-sh-elf-linux64.tar.bz2"
-hashes = ["sha256:e0e241f74f376657f5c750267eb05b2f45252750f01f1b9bfbe6c845760fa44e"]
+hashes = [
+  "sha256:bdaeca058a9f0752693ef72d571c7a92139ed0e10579a28494a5a941ee75a3f4",
+]
